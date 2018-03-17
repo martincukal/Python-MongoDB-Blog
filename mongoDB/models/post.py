@@ -30,10 +30,10 @@ class Post(object):
 
     @staticmethod
     def from_mongo(id):
-        return Database.find_one(collection='posts',query={'id': id})
+        return Database.find_one('posts', {'id': id})
 
     @staticmethod
-    def from_blog(id):
-        return[post for post in Database.find(collection='posts', query={'blod_id': id})]
+    def from_blog(blog_id):
+        return [post for post in Database.find('posts', {'blog_id': blog_id})]
 
 
