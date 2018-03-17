@@ -19,6 +19,9 @@ from_database = Blog.from_mongo(blog.id)
 
 print(blog.get_posts())
 
+#post = Post.from_mongo('cdcacfd19b2f4078a3ab16638e033f16')
+#print(post.blog_id)
+
 
 
 
